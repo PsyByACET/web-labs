@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(../img/fon.jpeg) no-repeat center top / cover;
+    height: 100vh;
+}
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0;
+}
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0;
+}
+.cat {
+    display: block;
+    margin: 0 auto;
+    margin-top: 9vw;
+    height: 23vw;
+    min-height: 350px;
+    transition: .8s;
+}
+.cat:hover {
+    -webkit-animation: animcat 3s infinite linear;
+}
+
+@keyframes animcat {
+    0% {
+      transform: none;
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: none;
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: none
+    }
+  }
