@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz';
+}
+/* Menu  */
+#menu-checkbox {
+    /* чекбокс скрыт */
+    display: none;
+  }
+  .main-menu {
+    /* пункты меню скрыты */
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+  }
+  .main-menu li {
+    /* пункты меню расположены вертикально */
+    /* каждый имеет ширину 100% */
+    font-size: 1.3em;
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .main-menu a {
+    /* немного стилизуем ссылки */
+    display: block;
+    border-bottom: 1px solid blueviolet;
+    color: lightslategray;
+    padding: .5em;
+    text-decoration: none;
+    background-color: #333;
+  }
+  .main-menu a:hover {
+    
+  }
+  .toggle-button {
+    text-align: center;
+    display: block;
+    /* не забываем явно указать каким должен быть курсор */
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+  }
+  .toggle-button:after {
+    /* получаем данные из атрибута data-open в html */
+    content: attr(data-open);
+    display: block;
+    padding: 10px 30px;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+    /* когда чекбокс активен меню становится видимым */
+    display: block;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+    content: attr(data-close);
+  }
+  @media screen and (min-width: 640px) {
+    .toggle-button {
+      /* label скрыт */
+      display: none;
+    }
+    .main-menu {
+      display: block;
+      margin: 0 auto;
+      background-color: #333;
+      height: 5vh;
+      min-height: 43px;
+    }
+    .main-menu li {
+      /* теги <li> расположены в ряд */
+      width: calc(100% / 5);
+      text-align: center;
+      display: inline-block;
+      margin-right: -4px;
+      
+    }
+    .main-menu a {
+      display: inline-block;
+      margin-right: -4px;
+      font-size: .8em;
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      border-bottom: 0;
+      
+    }
+  }
+  
+body.ready {
+  opacity: 1;
+}
+.logo-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -40px;
+}
+.letters {
+  position: relative;
+  display: flex;
+  width: 682px;
+  height: 162px;
+}
+.letter {
+  position: relative;
+  width: 162px;
+  height: 162px;
+}
+.letter:not(:first-child) {
+  margin-left: -42px;
+}
+.letter-i {
+  z-index: 1;
+  width: 82px;
+  transform-origin: 100% 50%;
+}
+.dot {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  transform: scale(0);
+}
+.dot-i {
+  top: 0;
+  left: 240px;
+}
+.dot-e {
+  bottom: 0;
+  right: 0;
+}
+.logo-icon {
+  display: flex;
+  position: absolute;
+  left: 230px;
+  top: -10px;
+  width: 222px;
+  height: 62px;
+}
+.icon {
+  width: 62px;
+  height: 62px;
+  opacity: 0;
+}
+.icon-text {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 160px;
+  height: 62px;
+}
+.icon-text path,
+.icon-text polygon {
+  opacity: 0;
+}
+
