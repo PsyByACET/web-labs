@@ -156,3 +156,30 @@ body.ready {
   opacity: 0;
 }
 
+.kek {
+  background-color: #212121;
+}
+.anim, .anim svg {
+  position: relative;
+  width: 100%;
+  background-color: #212121;
+}
+.anim path {
+stroke-width: 5;
+}
+h1 {
+  margin: 0 auto; 
+  text-align: center;
+  color: aliceblue;
+  font-size: 3em;
+  padding-top: 3vw;
+}
+.kek span {
+  display: block;
+  position: relative;
+  color: aliceblue;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 7.5vw;
+  margin-top: -60vw!important;
+}
