@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: #1A212F;
 }
 .clearfix:after{
 	content: '';
@@ -41,6 +42,51 @@ header {
     list-style-type: none;
     margin-left: 30px;
 }
+.menu a {
+    color: #1A212F;
+    transition: .4s;
+}
+.menu a:hover {
+    color: #FF7236;
+}
+.menu2 a {
+    color: #1A212F;
+    transition: .4s;
+}
+.menu2 a:hover {
+    color: #FF7236;
+}
+.menu [type="checkbox"]{
+    display: none;
+}
+.menu_class {
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none;
+}
+.menu2 {
+    float: right;
+    font-weight: 600;
+    margin-top: 0.7vw;
+    color: #1A212F;
+    
+}
+.menu2 ul{
+    display: flex;
+
+}
+.menu2 li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+.menu2 [type="checkbox"]{
+    display: none;
+}
+.menu_class2 {
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none;
+}
 .s2 {
     background: url(..//img/maincat.jpg) no-repeat center top / cover;
     padding-bottom: 9vw;
@@ -71,10 +117,19 @@ header {
     border-radius: 30px;
     display: flex;
     justify-content: space-around;
+    transition: .5s;
     
 }
+.button:hover {
+    transform: scale(1.1);
+    background-color: #FF7236;
+}
+.button:hover span{
+    color: #fff;
+}
 .button span {
-    margin-top: 9px;
+    font-size: 18px;
+    margin-top: 8px;
 }
 .S_about_us h1{
     margin: 30px auto;
@@ -97,7 +152,7 @@ header {
 }
 .card {
     width: 19vw;
-    height: 12vw;
+    
     border-radius: 10px;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -114,19 +169,9 @@ header {
 .opas {
     position: absolute;
     width: 25vw;
-    margin-top: -190px;
+    margin-top: -10vw;
     right: 0px;
     z-index: 1;
-}
-@media screen and (max-width: 714px) {
-    .card {
-        text-align: center;
-        width: 60vw;
-        font-size: 16px;
-    }
-    .card img {
-        margin-bottom: 0px;
-    }
 }
 .fish {
     position: absolute;
@@ -135,9 +180,9 @@ header {
 }
 section  .hh{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Rubik', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
 }
 .card img {
     width: 7vw;
@@ -185,7 +230,8 @@ section  .hh{
 }
 .swiper-slide .imgSlide{
     width: 40vw;
-    min-width: 220px;
+    min-width: 430px;
+    min-height: 325px;
     position: relative;
     z-index: 1;
 }
@@ -207,11 +253,13 @@ section  .hh{
     position: relative;
     z-index: 2;
     background-color: #fff;
+    min-width: 283px;
+    min-height: 238px;
     
 }
 
 .review {
-    width: 28vw;
+    
     border-radius: 15px;
     box-shadow: 0px 0px 4px .2px rgba(71, 74, 80, 0.534);
     box-sizing: border-box;
@@ -227,6 +275,7 @@ section  .hh{
     color: #FF7236;
     font-size: 102px;
     margin-left: -1.3vw;
+    font-family: 'Rubik', sans-serif;
 }
 .name-date {
     color: #848484;
@@ -238,6 +287,229 @@ section  .hh{
     float: right;
 }
 .contacts {
+    box-sizing: border-box;
     width: 41.5vw;
-    background-color: #ffaa50;
+    padding-left: 13vw;
+    background-color: #FAC663;
+    float: left;
+    padding-bottom: 30px;
+    
+}
+.contacts h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+.sLast {
+    margin-bottom: 30px;
+}
+iframe {
+    width: 58.5vw;
+    float: left;
+    border: none;
+}
+.catSwiper {
+    min-width: 697px;
+}
+footer {
+    color: #8f8f8f;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+.confi {
+    float: right;
+}
+.swiper-slide .button img {
+    min-width: 36px!important;
+    min-height: 36px!important;
+}
+@media screen and (max-width: 768px) {
+    .menu li {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .menu2 li {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .nameblock p {
+        font-size: 12px;
+    }
+    .card {
+        text-align: center;
+        width: 60vw;
+        padding-bottom: -100px;
+        font-size: 18px;
+        
+    }
+    .nameblock p {
+        width: 200px;
+    }
+    .card img {
+        margin-bottom: 0px;
+    }
+    .imgSlide {
+        display: block;
+        margin: 0 auto;
+        width: 70vw!important;
+
+    }
+    .rate {
+        background-color: rgba(255, 255, 255, .3);
+        box-shadow: none;
+        position: absolute;
+        box-shadow: none;
+        left: 45%;
+        min-width: 140px;
+        width: 45vw;
+    }
+    .rate .button {
+        width: 190px;
+    }
+
+    .catSwiper {
+        min-width: 320px;
+        width: 85vw;
+    }
+    .swiper-slide .button img {
+        min-width: 30px!important;
+        min-height: 30px!important;
+    }
+    .review {
+
+    }
+    .contacts {
+        padding-bottom: 25px;
+    }
+    .contacts h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 900;
+        font-size: 2em;
+    }
+    .contacts h2 {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 464px) {
+    .menu ul {
+        flex-direction: column;
+        display: none;
+        min-height: 0; 
+    }
+    .menu2 ul {
+        flex-direction: column;
+        display: none;
+        min-height: 0; 
+    }
+    .menu_class, .menu_class2 {
+        display: flex;
+    }
+    input.menu_class:checked + label.menu_class {
+        background-color: red;
+        transition: 12s;
+    }
+    input.menu_class:checked ~ ul {
+        transition: 2s;
+        display: flex;
+    }
+    .nameblock h1 {
+        font-size: 26px;
+    }
+    .nameblock p {
+        width: 100px;
+    }
+    .button {
+        background-color: #fff;
+        width: 140px;
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .button img {
+        width: 26px;
+        height: 26px;
+    }
+    .button span {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .catSwiper {
+        min-width: 290px;
+    }
+    .imgSlide {
+        min-width: 275px!important;
+        min-height: 200px!important;
+    }
+    .catSwiper .swiper-slide {
+        flex-direction: column;
+    }
+    .swipers_buttons {
+        margin-top: 26px;
+    }
+    .catSwiper .swipers_buttons {
+        margin-right: 20px;
+    }
+    .swipers_buttons img {
+        width: 40px;
+        height: 40px;
+    }
+    .swiper-pagination {
+        position: relative!important;
+        width: 60px!important;
+        margin: 30px 0px 0px 0px;
+    }
+    .catSwiper .swiper-pagination {
+        margin-left: 20px;
+    }
+    .rate {
+        position: relative;
+        width: 80vw;
+        left: 0;
+        margin: 0 auto;
+    }
+    .rate .button {
+        margin: 0 auto;
+        padding: ;
+    }
+    .contacts {
+        padding-left: 15px;
+    }
+    .contacts h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 900;
+        font-size: 1.4em;
+    }
+    .contacts h2 {
+        font-size: 1.1em;
+    }
+    .menu2 ul {
+        flex-direction: column;
+        display: none;
+        min-height: 0; 
+    }
+    .menu_class2 {
+        display: flex;
+    }
+    input.menu_class2:checked + label.menu_class2 {
+        background-color: red;
+        transition: 12s;
+    }
+    input.menu_class2:checked ~ ul {
+        transition: 2s;
+        display: flex;
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+    .confi {
+        float: none;
+        display: block;
+        text-align: center;
+    }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Rubik&display=swap" rel="stylesheet">
+    <linsk href="https://fonts.googleapis.com/css?family=Lato|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -14,18 +14,20 @@
         <div class="container clearfix">
             <div class="logo"><img src="img/logo.svg" alt=""></div>
             <div class="menu">
+                <input type="checkbox" id="menu" class="menu_class">
+                <label for="menu" class="menu_class">Menu</label>
                 <ul>
-                    <li><a href="#">Почему мы?</a></li>
-                    <li><a href="#">Номера</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Как нас найти</a></li>
+                    <li><a href="#WhyWe">Почему мы?</a></li>
+                    <li><a href="#Numbers">Номера</a></li>
+                    <li><a href="#Review">Отзывы</a></li>
+                    <li><a href="#sCont">Как нас найти</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <section class="s2">
         <div class="container">
-            <div class="nameblock">
+            <div class="nameblock wow fadeInLeft">
                 <span>Санкт-Петербург</span>
                 <h1>Котейка</h1>
                 <p>Уютная гостиница для котов и кошек</p>
@@ -33,8 +35,8 @@
             </div>
         </div>
     </section>
-    <section class="S_about_us">
-        <img class="opas" src="img/bigpaw.png" alt="">
+    <section class="S_about_us" id="WhyWe">
+        <img class="opas" src="img/bigpaw.png" alt="" >
         <div class="container">
             <h1>Почему мы?</h1>
             <div class="cards">
@@ -71,12 +73,12 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="Numbers">
         <img class="fish" src="img/fish.png" alt="">
         <div class="container">
             <h1 class="hh">Номера</h1>
             <!-- Slider main container -->
-            <div class="swiper-container catSwiper">
+            <div class="swiper-container catSwiper wow flipInX data-wow-duration="2s" data-wow-delay=".6s"">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -89,7 +91,7 @@
                                 <li>Размеры (ШхГхВ) - 90х100х180 см</li>
                                 <li>Цена за сутки - 200₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img src="img/paw2.svg" alt=""></div></a>
+                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -101,7 +103,7 @@
                                 <li>Размеры (ШхГхВ) - 100х125х180 см</li>
                                 <li>Цена за сутки - 250₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img src="img/paw2.svg" alt=""></div></a>
+                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -113,7 +115,7 @@
                                 <li>Размеры (ШхГхВ) - 125х125х180 см</li>
                                 <li>Цена за сутки - 350₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img src="img/paw2.svg" alt=""></div></a>
+                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
                         </div>
                     </div>
                 </div>
@@ -128,13 +130,13 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="Review">
         <div class="container">
             <h1 class="hh">Отзывы</h1>
            <!-- Slider main container -->
-           <div class="swiper-container swiper-mode-my-swiper" style="margin-top: 1px;">
+           <div class="swiper-container swiper-mode-my-swiper wow flipInX data-wow-duration="2s" data-wow-delay=".6s"" style="margin-top: 1px; padding: 10px;">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" style="padding: 4px;">
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="review">
@@ -178,16 +180,49 @@
         </div>
         </div>
     </section>
-    <section>
-        <div class="contacts">
+    <section class="clearfix" id="sCont">
+        <div class="contacts wow fadeInLeft" id="contacts">
             <h1>Как нас найти</h1>
             <h2>Адрес</h2>
+            <p>Санкт-Петербург <br>Ул Большая Конюшенная, д 19</p>
             <h2>Режим работы</h2>
+            <p>Ежедневно, с 9:00 до 20:00</p>
             <h2>Телефон</h2>
+            <p>8 (800) 333-55-99</p>
             <h2>E-mail</h2>
+            <p>info@cat-hotel.ru</p>
             <h2>Социальные сети</h2>
+            <div class="sochial-webs">
+                <img src="img/facebook.svg" alt="">
+                <img src="img/instagram.svg" alt="">
+                <img src="img/vk.svg" alt="">
+            </div>
+        </div>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/savina_gallery/1126663289/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Savina Gallery</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/event_organizers/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организация и обслуживание выставок в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/exhibition_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Выставочный центр в Санкт‑Петербурге</a><iframe class="wow fadeInRight" id="map"  src="https://yandex.ru/map-widget/v1/-/CKeofOYD"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section>
+    <section class="sLast" style="padding-top: 15px;">
+        <div class="s">
+            <div class="container clearfix">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="menu2">
+                    <input type="checkbox" id="menu2" class="menu_class2">
+                    <label for="menu2" class="menu_class2">Menu</label>
+                    <ul>
+                        <li><a href="#">Почему мы?</a></li>
+                        <li><a href="#">Номера</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Как нас найти</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <span class="copyright">© 2020 Все права защищены</span>
+            <span class="confi">Политика конфиденциальности</span>
+        </div>
+    </footer>
     <script src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
