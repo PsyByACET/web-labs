@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linsk href="https://fonts.googleapis.com/css?family=Lato|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+            <div class="menu">
+                <input type="checkbox" id="menu" class="menu_class">
+                <label for="menu" class="menu_class">Menu</label>
+                <ul>
+                    <li><a href="index.html#WhyWe">Почему мы?</a></li>
+                    <li><a href="index.html#Numbers">Номера</a></li>
+                    <li><a href="index.html#Review">Отзывы</a></li>
+                    <li><a href="index.html#sCont">Как нас найти</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <h1 class="WeNumbers-h1" style="font-size: 34px;">Наши номера</h1>
+            <select class="sort" name="sort" id="sort">
+                <option selected="selected">↑ По площади</option>
+                <option>↓ По площади</option>
+                <option>↑ По цене</option>
+                <option>↓ По цене</option>
+            </select>
+        </div>
+    </section>
+    <section>
+        <div class="container catalog_main">
+            <input type="checkbox" id="filtres_check" class="filtres_class">
+            <label for="filtres_check" class="filtres_class" >Фильтры</label>
+            <div class="filtres">
+                <h2>Цена за сутки, ₽</h2>
+                <form action="#">
+                    <input class="input_price" type="number" placeholder="От 100" min="100" max="600">
+                    <input class="input_price" type="number" placeholder="До 600" min="100" max="600">
+                    <input type="submit" style="display: none;">
+                </form>
+                <h2>Площадь</h2>
+                <div>
+                    <input class="check_b0x" type="checkbox" id="m063" name="m063" value="m063">
+                    <label for="m063">0,63 м2</label> <br>
+                    <input class="check_b0x" type="checkbox" id="m090" name="m090" value="m090">
+                    <label for="m090">0,90 м2</label> <br>
+                    <input class="check_b0x" type="checkbox" id="m113" name="m113" value="m113">   
+                    <label for="m113">1,13 м2</label> <br>     
+                    <input class="check_b0x" type="checkbox" id="m156" name="m156" value="m156">
+                    <label for="m156">1,56 м2</label> <br>
+                    <input class="check_b0x" type="checkbox" id="m256" name="m256" value="m256">
+                    <label for="m256">2,56 м2</label> <br>
+                    <input class="check_b0x" type="checkbox" id="m288" name="m288" value="m288">
+                    <label for="m288">2,88 м2</label>
+                </div>
+                <h2>Оснащение номера</h2>
+                <div>
+                    <input class="check_b0x" type="checkbox" id="num" name="num" value="num">
+                    <label for="num">Пустой номер</label> <br>
+                    <input class="check_b0x" type="checkbox" id="lej" name="lej" value="lej">
+                    <label for="lej">Лежак</label> <br>
+                    <input class="check_b0x" type="checkbox" id="cog" name="cog" value="cog">
+                    <label for="cog">Когтеточка</label> <br>
+                    <input class="check_b0x" type="checkbox" id="gameC" name="gameC" value="gameC">
+                    <label for="gameC">Игровой-комплекс</label> <br>
+                    <input class="check_b0x" type="checkbox" id="hom" name="hom" value="hom">
+                    <label for="hom">Домик</label>
+                </div>
+                <a href="#"><div id="but_filt" class="button_filtr" style="color: black; margin: 10px auto;">Filter</div></a>
+                <a class="button_reset" id="button_reset" href="#" style="color: black; margin: 10px auto;">Сбрросить фильтр</a>
+            </div>
+            <div class="list">
+                <div class="cat_block_list wow fadeInLeft">
+                    <img src="img/cat1.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Эконом</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 90х70х180см <br>
+                            Площадь - 0.63 м2 <br>
+                            Оснащение номера <img src="img/osnNon.svg" style="width: 20px;" title="Пустой номер"><br>
+                            Цена за сутки: <span class="price_span">100₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                <div class="cat_block_list wow fadeInLeft " data-wow-delay=".4s">
+                    <img src="img/cat2.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Эконом плюс</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 90х100х180см <br>
+                            Площадь - 0.90 м2 <br>
+                            Оснащение номера <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"> <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"><br>
+                            Цена за сутки: <span class="price_span">200₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                <div class="cat_block_list wow fadeInLeft" data-wow-delay=".8s">
+                    <img src="img/slide2.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Комфорт</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 100х125х180см <br>
+                            Площадь - 1.13 м2 <br>
+                            Оснащение номера <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"> <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"> <img src="img/osnIgr.svg" style="width: 20px; margin-bottom: -2px;" title="Игровой комплекс"> <br>
+                            Цена за сутки: <span class="price_span">250₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                <div class="cat_block_list wow fadeInLeft">
+                    <img src="img/slide3.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Сьют</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 125х125х180см <br>
+                            Площадь - 1.56 м2 <br>
+                            Оснащение номера <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"> <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"> <img src="img/osnIgr.svg" style="width: 20px; margin-bottom: -2px;" title="Игровой комплекс"> <br>
+                            Цена за сутки: <span class="price_span">350₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                <div class="cat_block_list wow fadeInLeft" data-wow-delay=".4s">
+                    <img src="img/cat5.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Люкс</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 160х160х180см <br>
+                            Площадь - 2.56 м2 <br>
+                            Оснащение номера <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"> <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"> <img src="img/osnIgr.svg" style="width: 20px; margin-bottom: -2px;" title="Игровой комплекс"> <img src="img/osnDom.svg" style="width: 20px;" title="Домик"> <br>
+                            Цена за сутки: <span class="price_span">500₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                <div class="cat_block_list wow fadeInLeft" data-wow-delay=".8s">
+                    <img src="img/cat6.jpg" alt="">
+                    <div class="list_block_text">
+                        <h3>Супер-Люкс</h3>
+                        <p>
+                            Размеры (ШхГхВ) - 180х160х180см <br>
+                            Площадь - 2.88 м2 <br>
+                            Оснащение номера <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"> <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"> <img src="img/osnIgr.svg" style="width: 20px; margin-bottom: -2px;" title="Игровой комплекс"> <img src="img/osnDom.svg" style="width: 20px;" title="Домик"> <br>
+                            Цена за сутки: <span class="price_span">600₽</span>
+                        </p>
+                    </div>
+                    <a href="hz.html" class="button_reserved_v3"><span class="butres3span">Забронировать</span><div class="img_paw_v3"><img src="img/paw2.svg" alt=""></div></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="sBan wow fadeInUp" data-wow-delay=".8s">
+        <div class="container">
+            <div  class="text-bannner">
+                <h2>Каждый 7-й день <br> <span>бесплатно!</span></h2>
+                <p>Акция действует при размещении <br> в номерах "Люкс" и "Супер-Люкс"</p>
+                <a href="catalog.html"><div class="button but1"><span>Забронировать</span> <img src="img/paw.svg" alt=""></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="clearfix" id="sCont">
+        <div class="contacts wow fadeInLeft" id="contacts">
+            <h1>Как нас найти</h1>
+            <h2>Адрес</h2>
+            <p>Санкт-Петербург <br>Ул Большая Конюшенная, д 19</p>
+            <h2>Режим работы</h2>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+            <h2>Телефон</h2>
+            <p>8 (800) 333-55-99</p>
+            <h2>E-mail</h2>
+            <p>info@cat-hotel.ru</p>
+            <h2>Социальные сети</h2>
+            <div class="sochial-webs">
+                <img src="img/facebook.svg" alt="">
+                <img src="img/instagram.svg" alt="">
+                <img src="img/vk.svg" alt="">
+            </div>
+        </div>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/savina_gallery/1126663289/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Savina Gallery</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/event_organizers/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организация и обслуживание выставок в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/exhibition_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Выставочный центр в Санкт‑Петербурге</a><iframe class="wow fadeInRight" id="map"  src="https://yandex.ru/map-widget/v1/-/CKeofOYD"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section>
+    <section class="sLast" style="padding-top: 15px;">
+        <div class="s">
+            <div class="container clearfix">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="menu2">
+                    <input type="checkbox" id="menu2" class="menu_class2">
+                    <label for="menu2" class="menu_class2">Menu</label>
+                    <ul>
+                        <li><a href="index.html#WhyWe">Почему мы?</a></li>
+                        <li><a href="index.html#Numbers">Номера</a></li>
+                        <li><a href="index.html#Review">Отзывы</a></li>
+                        <li><a href="index.html#sCont">Как нас найти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <span class="copyright">© 2020 Все права защищены</span>
+            <span class="confi">Политика конфиденциальности</span>
+        </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

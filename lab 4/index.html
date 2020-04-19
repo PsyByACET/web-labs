@@ -17,12 +17,35 @@
                 <input type="checkbox" id="menu" class="menu_class">
                 <label for="menu" class="menu_class">Menu</label>
                 <ul>
-                    <li><a href="#WhyWe">Почему мы?</a></li>
-                    <li><a href="#Numbers">Номера</a></li>
-                    <li><a href="#Review">Отзывы</a></li>
-                    <li><a href="#sCont">Как нас найти</a></li>
+                    <li><a href="#WhyWe" class="scroll-to">Почему мы?</a></li>
+                    <li><a href="#Numbers" class="scroll-to">Номера</a></li>
+                    <li><a href="#Review" class="scroll-to">Отзывы</a></li>
+                    <li><a href="#sCont" class="scroll-to">Как нас найти</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="popup-fade">
+            <div class="popup">
+                <a class="popup-close" href="#"><img src="img/close_window.svg" alt=""></a>
+                <h2>Забронировать номер</h2>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Ваше имя"> <br>
+                    <input type="text" name="name_pet" placeholder="Имя питомца"> <br>
+                    <input type="tel" name="telephone" placeholder="Телефон"> <br>
+                    <input type="email" name="email" placeholder="E-mail"><br>
+                    <span>Дата заезда  с </span><input class="inputData" type="date" name="" id=""><span> по </span>
+                    <input class="inputData" type="date" name="" id="">
+                    <a href="#"><div class="button popup-open2" style="margin-top: 11px; background-color: #FF7236; margin: 10px auto;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                </form>
+            </div>		
+        </div>
+        <div class="popup-fade2">
+            <div class="popup2">
+                <a class="popup-close2" href="#"><img src="img/close_window.svg" alt=""></a>
+                <h2>Спасибо за заявку!</h2>
+                <p>Мы свяжемся с вами в ближайшее время</p>
+                <a href="#"><div class="button popup-close-button" style="margin-top: 11px; background-color: #FF7236; margin: 10px auto;"><span style="color: white;">Ок</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+            </div>		
         </div>
     </header>
     <section class="s2">
@@ -31,7 +54,7 @@
                 <span>Санкт-Петербург</span>
                 <h1>Котейка</h1>
                 <p>Уютная гостиница для котов и кошек</p>
-                <a href="#"><div class="button"><span>Забронировать</span> <img src="img/paw.svg" alt=""></div></a>
+                <a href="catalog.html"><div class="button but1"><span>Забронировать</span> <img src="img/paw.svg" alt=""></div></a>
             </div>
         </div>
     </section>
@@ -91,7 +114,7 @@
                                 <li>Размеры (ШхГхВ) - 90х100х180 см</li>
                                 <li>Цена за сутки - 200₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                            <div class="button popup-open" style="margin-top: 11px; background-color: #FF7236;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -103,7 +126,7 @@
                                 <li>Размеры (ШхГхВ) - 100х125х180 см</li>
                                 <li>Цена за сутки - 250₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                            <div class="button popup-open" style="margin-top: 11px; background-color: #FF7236;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -115,7 +138,7 @@
                                 <li>Размеры (ШхГхВ) - 125х125х180 см</li>
                                 <li>Цена за сутки - 350₽</li>
                             </ul>
-                            <a href="#"><div class="button"><span>Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                            <div class="button popup-open" style="margin-top: 11px; background-color: #FF7236;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -130,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section id="Review">
+    <section id="Review" style="margin-bottom: 80px;">
         <div class="container">
             <h1 class="hh">Отзывы</h1>
            <!-- Slider main container -->
@@ -198,7 +221,7 @@
                 <img src="img/vk.svg" alt="">
             </div>
         </div>
-        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/savina_gallery/1126663289/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Savina Gallery</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/event_organizers/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организация и обслуживание выставок в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/exhibition_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Выставочный центр в Санкт‑Петербурге</a><iframe class="wow fadeInRight" id="map"  src="https://yandex.ru/map-widget/v1/-/CKeofOYD"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/savina_gallery/1126663289/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Savina Gallery</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/event_organizers/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организация и обслуживание выставок в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/exhibition_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Выставочный центр в Санкт‑Петербурге</a><iframe class="wow fadeInRight toxic" id="map"  src="https://yandex.ru/map-widget/v1/-/CKeofOYD"  frameborder="1" allowfullscreen="true" style="position:relative; height;"></iframe></div>
     </section>
     <section class="sLast" style="padding-top: 15px;">
         <div class="s">
@@ -208,10 +231,10 @@
                     <input type="checkbox" id="menu2" class="menu_class2">
                     <label for="menu2" class="menu_class2">Menu</label>
                     <ul>
-                        <li><a href="#">Почему мы?</a></li>
-                        <li><a href="#">Номера</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Как нас найти</a></li>
+                    <li><a href="#WhyWe" class="scroll-to">Почему мы?</a></li>
+                    <li><a href="#Numbers" class="scroll-to">Номера</a></li>
+                    <li><a href="#Review" class="scroll-to">Отзывы</a></li>
+                    <li><a href="#sCont" class="scroll-to">Как нас найти</a></li>
                     </ul>
                 </div>
             </div>
@@ -228,6 +251,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src='js/jquery.min.js'></script>
     <script src="js/main.js"></script>
     
 </body>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linsk href="https://fonts.googleapis.com/css?family=Lato|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+            <div class="menu">
+                <input type="checkbox" id="menu" class="menu_class">
+                <label for="menu" class="menu_class">Menu</label>
+                <ul>
+                    <li><a href="index.html#WhyWe">Почему мы?</a></li>
+                    <li><a href="index.html#Numbers">Номера</a></li>
+                    <li><a href="index.html#Review">Отзывы</a></li>
+                    <li><a href="index.html#sCont">Как нас найти</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-fade">
+            <div class="popup">
+                <a class="popup-close" href="#"><img src="img/close_window.svg" alt=""></a>
+                <h2>Забронировать номер</h2>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Ваше имя"> <br>
+                    <input type="text" name="name_pet" placeholder="Имя питомца"> <br>
+                    <input type="tel" name="telephone" placeholder="Телефон"> <br>
+                    <input type="email" name="email" placeholder="E-mail"><br>
+                    <span>Дата заезда  с </span><input class="inputData" type="date" name="" id=""><span> по </span>
+                    <input class="inputData" type="date" name="" id="">
+                    <a href="#"><div class="button popup-open2" style="margin-top: 11px; background-color: #FF7236; margin: 10px auto;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                </form>
+            </div>		
+        </div>
+        <div class="popup-fade2">
+            <div class="popup2">
+                <a class="popup-close2" href="#"><img src="img/close_window.svg" alt=""></a>
+                <h2>Спасибо за заявку!</h2>
+                <p>Мы свяжемся с вами в ближайшее время</p>
+                <a href="#"><div class="button popup-close-button" style="margin-top: 11px; background-color: #FF7236; margin: 10px auto;"><span style="color: white;">Ок</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+            </div>		
+        </div>
+    </header>
+    <section>
+        <div class="container slider-3">
+            <div class="swiper-container gallery-thumbs img-slider-full">
+                <div class="swiper-wrapper img-slider-icons">
+                    <div class="swiper-slide slide-icon" ><img src="img/cat1.jpg" alt=""></div>
+                    <div class="swiper-slide slide-icon" ><img src="img/cat2.jpg" alt=""></div>
+                    <div class="swiper-slide slide-icon" ><img src="img/cat5.jpg" alt=""></div>
+                </div>
+                    <div class="swiper-container gallery-top img-slider-main">
+                    <div class="swiper-wrapper wrapper-main">
+                        <div class="swiper-slide slide-main" ><img src="img/cat1.jpg" alt=""></div>
+                        <div class="swiper-slide slide-main" ><img src="img/cat2.jpg" alt=""></div>
+                        <div class="swiper-slide slide-main" ><img src="img/cat5.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="text-img-slider">
+                    <h1>Супер-люкс</h1>
+                        <p>
+                            Размеры (ШхГхВ) - 180х160х180см <br>
+                            Площадь - 2.88 м2 <br>
+                            Оснащение номера <br>
+                            <img src="img/osnLej.svg" style="width: 20px;" title="Лежак"><span> Лежак</span><br>
+                            <img src="img/osnKog.svg" style="width: 18px; margin-bottom: -1.5px;" title="Когтеточка"><span> Когтеточка</span><br>
+                            <img src="img/osnIgr.svg" style="width: 20px; margin-bottom: -2px;" title="Игровой комплекс"><span> Игровой-комплекс</span><br>
+                            <img src="img/osnDom.svg" style="width: 20px;" title="Домик"><span> Домик</span><br> <br>
+                            Цена за сутки: <span class="price_span">600₽</span> <br>
+                            <div class="button popup-open" style="margin-top: 11px; background-color: #FF7236;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Numbers">
+        <img class="fish" src="img/fish.png" alt="">
+        <div class="container">
+            <h1 class="hh">Номера</h1>
+            <!-- Slider main container -->
+            <div class="swiper-container catSwiper wow flipInX data-wow-duration="2s" data-wow-delay=".6s"">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="imgSlide" src="img/slide1.jpg" alt="">
+                        <div class="rate">
+                            <h2>Эконом плюс</h2>
+                            <ul>
+                                <li>Площадь - 0,90 м2</li>
+                                <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                <li>Цена за сутки - 200₽</li>
+                            </ul>
+                            <a href="#"><div class="button popup-open" style="margin-top: 11px;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgSlide" src="img/slide2.jpg" alt="">
+                        <div class="rate">
+                            <h2>Комфорт</h2>
+                            <ul>
+                                <li>Площадь - 1,13 м2</li>
+                                <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                <li>Цена за сутки - 250₽</li>
+                            </ul>
+                            <a href="#"><div class="button popup-open" style="margin-top: 11px;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgSlide" src="img/slide3.jpg" alt="">
+                        <div class="rate">
+                            <h2>Сьют</h2>
+                            <ul>
+                                <li>Площадь - 1,56 м2</li>
+                                <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                <li>Цена за сутки - 350₽</li>
+                            </ul>
+                            <a href="#"><div class="button popup-open" style="margin-top: 11px;"><span style="color: white;">Забронировать</span> <img class="paw2" src="img/paw2.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swipers_buttons">
+                    <img class="swiper-button-prev_catM" src="img/Left.png" alt="">
+                    <img class="swiper-button-next_catM" src="img/Right.png" alt="">
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="clearfix" id="sCont">
+        <div class="contacts wow fadeInLeft" id="contacts">
+            <h1>Как нас найти</h1>
+            <h2>Адрес</h2>
+            <p>Санкт-Петербург <br>Ул Большая Конюшенная, д 19</p>
+            <h2>Режим работы</h2>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+            <h2>Телефон</h2>
+            <p>8 (800) 333-55-99</p>
+            <h2>E-mail</h2>
+            <p>info@cat-hotel.ru</p>
+            <h2>Социальные сети</h2>
+            <div class="sochial-webs">
+                <img src="img/facebook.svg" alt="">
+                <img src="img/instagram.svg" alt="">
+                <img src="img/vk.svg" alt="">
+            </div>
+        </div>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/savina_gallery/1126663289/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Savina Gallery</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/event_organizers/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организация и обслуживание выставок в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/exhibition_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Выставочный центр в Санкт‑Петербурге</a><iframe class="wow fadeInRight" id="map"  src="https://yandex.ru/map-widget/v1/-/CKeofOYD"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section>
+    <section class="sLast" style="padding-top: 15px;">
+        <div class="s">
+            <div class="container clearfix">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="menu2">
+                    <input type="checkbox" id="menu2" class="menu_class2">
+                    <label for="menu2" class="menu_class2">Menu</label>
+                    <ul>
+                        <li><a href="index.html#WhyWe">Почему мы?</a></li>
+                        <li><a href="index.html#Numbers">Номера</a></li>
+                        <li><a href="index.html#Review">Отзывы</a></li>
+                        <li><a href="index.html#sCont">Как нас найти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <span class="copyright">© 2020 Все права защищены</span>
+            <span class="confi">Политика конфиденциальности</span>
+        </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
