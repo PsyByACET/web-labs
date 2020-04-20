@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url('../fonts/ProximaNova-Regular.ttf');
+}
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url('../fonts/ProximaNovaExCn-Bold.ttf');
+}
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url('../fonts/ProximaNovaExCn-Light.ttf');
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src: url('../fonts/Raleway-ExtraLight.ttf');
+}
+@font-face {
+    font-family: "Raleway-Light";
+    src: url('../fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: "Raleway-Thin";
+    src: url('../fonts/Raleway-Thin.ttf');
+}
