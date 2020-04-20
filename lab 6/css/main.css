@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vmin;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.crow_img, .crow_img_2{
+    position: absolute;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.crow_img{
+    width: 5%;
+    right: 28vw;
+    bottom: 45vh;
+}
+
+.crow_img_2{
+    width: 3%;
+    right: 25vw;
+    bottom: 46vh;
+    z-index: 3;
+}
+
+.crow_img:hover, .crow_img_2:hover{
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+.sun_img{
+    width: 7%;
+    right: 40vw;
+    bottom: 11vh;
+    position: absolute;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.sun_img:hover{
+    transform: scale(1.3);
+}
+
+.fly_img{
+    width: 15%;
+    bottom: 60vh;
+    position: absolute;
+    animation: birds_move 15s infinite;
+    z-index: 2;
+}
+
+@keyframes birds_move {
+    from {right: 140vw;}
+    to {right: -40vw;}
+}
+
+.sacura {
+    position: absolute;
+    width: 70vw;
+}
+
+.kakashi{
+    width: 15%;
+    right: 10%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: 2s;
+}
+@keyframes blink {  
+	0% {opacity: 1;}
+    5% { opacity: .5;}
+    10% {opacity: 0;}
+	15% {opacity: .5;}
+    20% { opacity: 1;}
+    25% {opacity: .5;}
+    30% {opacity: 0;}
+    35% { opacity: .5;}
+    40% {opacity: 1;}
+    45% {opacity: .5;}
+    50% { opacity: 0;}
+    55% {opacity: .5;}
+    60% {opacity: 1;}
+    65% { opacity: .5;}
+    70% {opacity: 0;}
+    75% {opacity: .5;}
+    80% { opacity: 1;}
+    85% {opacity: .5;}
+    90% {opacity: 0;}
+    95% { opacity: .5;}
+    100% {opacity: 1;}
+}
+.kakashi:active{
+    animation:blink .5s linear infinite; 
+}
+.tobi {
+    width: 15%;
+    left: 10%;
+    bottom: 7%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: 2s;
+}
+.tobi:active{
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+.ino {
+    position: absolute;
+    bottom: -90%;
+    left: 33%;
+    transition: 3s;
+}
+.ino:hover {
+    bottom: -30%;
+}
+.fire {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    width: 10vw;
+    animation:blink 15s linear infinite; 
+}
+.naruto {
+    position: absolute;
+    animation: naruto-move 15s infinite;
+    
+}
+.saske {
+    position: absolute;
+    animation: saske-move 15s infinite;
+}
+@keyframes naruto-move {
+    from {left: -40vw;}
+    to {left: 60vw;}
+}
+@keyframes saske-move {
+    from {left: 100vw;}
+    to {left: 10vw;}
+}
+
+.table_name{
+    font-family: Arial;
+    color: white;
+    animation:blur .75s ease-out infinite;
+    display: inline-block;
+    margin-left: 5%;
+    cursor: pointer;
+    transition: 2s;
+    z-index: 3;
+}
+
+.table_name:active{
+    text-shadow: 0 0 10px black;
+    transform: scale(1.3);
+}
+  @keyframes blur{
+    from{
+        text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;}
+  }
