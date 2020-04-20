@@ -202,13 +202,16 @@ header {
 .icons2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .iconsblock {
     background-color: pink;
     width: 40vw;
     min-width: 300px!important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 .iconka2 {
     width: 8vw;
@@ -219,8 +222,6 @@ header {
     border-radius: 1000px;
     transition: 0.4s;
     border: 2px solid black;
-    float: left;
+    
 }
-.texticon {
-    float: right;
-}
+
