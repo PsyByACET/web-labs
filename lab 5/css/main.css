@@ -1,0 +1,137 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    overflow-x: hidden;
+}
+.navbar-brand{
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 50px;
+    font-size: 15px;
+    padding-right: 10px;
+    font-weight: 500;
+    
+}
+.navigation ul {
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+}
+.navigation li:hover {
+    color: black;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+.nav-link:hover{
+    color: rgb(94, 94, 94)
+}
+.nav-item {
+
+}
+.bg{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h2{
+    color: black;
+    font-weight: 500;
+}
+.jumbotron{
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 15px;
+    padding-top: 35px;
+}
+.padding{
+    padding-bottom: 2em;
+}
+hr{
+    border-top: 1px solid rgb(211, 209, 209);
+    width: 95%;
+    height: 2px;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+.fa-compact-disc{
+    color: rgb(255, 187, 110);
+}
+.fa-microphone-alt{
+    color: rgb(255, 127, 110);
+}
+.fa-music{
+    color: rgb(110, 202, 255);
+}
+.fa-compact-disc, .fa-microphone-alt, .fa-music{
+    font-size: 3em;
+    margin: 1em;
+}
+.fa-napster{
+    font-size: 2em;
+    color: rgb(255, 127, 110);
+    margin-right: 10px;
+}
+.carousel slide{
+    z-index: 1;
+}
+.wrapper {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+@media print {
+    header{
+      display: none;
+    }
+    .main-text{
+      min-height: 8cm;
+    }
+    .bg {
+        display: none;
+    }
+    h2{
+      min-height: 1cm;
+      page-break-after: avoid;
+      margin-top: 0.5cm;
+    }
+    h3{
+      min-height: 1.5cm;
+      margin-bottom: 0.5cm;
+    }
+    hr{
+      border-top: 1px solid black;
+    }
+    .i1 > p {
+        page-break-inside: avoid;
+        min-width: 8cm;
+    }
+    .i2 > p {
+        page-break-inside: avoid;
+        min-width: 5cm;
+        height: 12cm;
+    }
+    .i3 > p {
+        page-break-inside: avoid;
+        width: 7.5cm;
+    }
+    .wrapper{
+        display: none;
+    }
+}

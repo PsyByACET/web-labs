@@ -173,7 +173,7 @@ header {
     padding: 2vw; 
     background-color: #FFFDFB;
     margin-bottom: 30px;
-    min-width: 250px;
+    min-width: 240px;
     min-height: 360px;
     font-size: 18px;
     z-index: 2;
@@ -199,7 +199,7 @@ section  .hh{
 }
 .card img {
     width: 7vw;
-    min-width: 120px;
+    min-width: 60px;
     margin-bottom: 25px;
 }
 .swiper-pagination-bullet {
@@ -634,6 +634,9 @@ select:after{
     width: 120px;
 }
 @media screen and (max-width: 768px) {
+    .swiper-button-prev_catM, .swiper-button-next_catM, .swiper-button-prev_cat2, .swiper-button-next_cat2 {
+        display: none;
+    }
     .menu li {
         margin-left: 5px;
         font-size: 14px;
@@ -646,8 +649,7 @@ select:after{
         font-size: 12px;
     }
     .card {
-        text-align: center;
-        width: 60vw;
+        padding: 20px;
         padding-bottom: -100px;
         font-size: 18px;
         
@@ -656,7 +658,8 @@ select:after{
         width: 200px;
     }
     .card img {
-        margin-bottom: 0px;
+        margin-bottom: 10x;
+
     }
     .imgSlide {
         display: block;
@@ -816,10 +819,9 @@ select:after{
     .swiper-pagination {
         position: relative!important;
         width: 60px!important;
-        margin: 30px 0px 0px 0px;
     }
     .catSwiper .swiper-pagination {
-        margin-left: 20px;
+        margin: 0 auto;
     }
     .rate {
         position: relative;
@@ -832,6 +834,9 @@ select:after{
     }
     .contacts {
         padding-left: 15px;
+        width: 100%;
+        float: none;
+        padding: 15px;
     }
     .contacts h1 {
         font-family: 'Rubik', sans-serif;
@@ -840,6 +845,11 @@ select:after{
     }
     .contacts h2 {
         font-size: 1.1em;
+    }
+    iframe {
+        height: 140px;
+        width: 100%;
+        float: none;
     }
     .menu2 ul {
         flex-direction: column;
