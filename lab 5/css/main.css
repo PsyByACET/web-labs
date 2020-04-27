@@ -134,4 +134,10 @@ img{
     .wrapper{
         display: none;
     }
+    .container-fluid {
+        background: none;
+    }
+    .main-text {
+        background: none;
+    }
 }
