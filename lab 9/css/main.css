@@ -1,0 +1,152 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    overflow-x: hidden;
+}
+.navbar-brand{
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 50px;
+    font-size: 1.9em;
+    margin-top: -50px;
+    padding-right: 10px;
+    font-weight: 500;
+    
+}
+.navigation ul {
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+}
+.navigation li:hover {
+    color: black;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    font-size: 1.3rem;
+}
+.nav-link:hover{
+    color: rgb(94, 94, 94)
+}
+.bg{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h2{
+    color: black;
+    font-weight: 500;
+}
+.padding{
+    padding-bottom: 2em;
+}
+hr{
+    border-top: 1px solid rgb(211, 209, 209);
+    width: 95%;
+    height: 2px;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+.fa-compact-disc{
+    color: rgb(255, 187, 110);
+}
+.fa-microphone-alt{
+    color: rgb(255, 127, 110);
+}
+.fa-music{
+    color: rgb(110, 202, 255);
+}
+.fa-compact-disc, .fa-microphone-alt, .fa-music{
+    font-size: 3em;
+    margin: 1em;
+}
+.fa-napster{
+    font-size: 2em;
+    color: rgb(255, 127, 110);
+    margin-right: 10px;
+}
+.carousel slide{
+    z-index: 1;
+}
+.wrapper {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.form {
+    height: 500px;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form_block {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+.form_block_input {
+    height: 75px;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    transition: 0.3s ease all;
+}
+
+
+.form_block_btn {
+    color: white;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.form_label{
+    color: black;
+    font-size: 1.6rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form_block_btn:hover{
+    font-size: 30px;
+    background: #fff;
+    color: #000;
+    border: none;
+}
+h2{
+    font-size: 2.7rem;
+    margin: 20px auto;
+}
+.main-text {
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 15px;
+    padding-top: 35px;
+}
+.main-text p {
+    font-size: 1.4rem;
+}
