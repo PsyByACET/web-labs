@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.images img {
+  border-radius: 5px;
+}
+
+header {
+  background: url(../img/imgM.jpg) no-repeat center top/cover;
+  height: 100vh;
+}
+
+.header__text {
+  height: 160px;
+  width: 400px;
+  text-align: center;
+  background: #ffffff80;
+  font-family: "Ubuntu Condensed", sans-serif;
+  box-sizing: border-box;
+  position: absolute;
+  left: 40%;
+  top: 35%;
+}
+.header__text > p {
+  color: #fa0000;
+}
+.header__texth1 {
+  margin: 0 auto;
+}
+
+section {
+  font-family: "Caveat", cursive;
+}
+section .class {
+  margin-left: 90px;
+  font-size: 700px;
+}
+section .class:nth-child(1) {
+  font-size: 50px;
+  margin-left: 20%;
+}
+section .class:nth-child(2) {
+  float: right;
+}
+section p {
+  font-size: 40px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.images img {
+  width: 40vw;
+  min-width: 500px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 10px #1f1e1e;
+}
+.images img:nth-child(3) {
+  width: 70vw;
+  min-width: 700px;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #b71dc5;
+}

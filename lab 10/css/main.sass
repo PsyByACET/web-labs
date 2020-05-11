@@ -1,0 +1,59 @@
+@import "null.sass"
+$borRad: 5px
+$wid: 700px
+$wid-img: 40vw
+$map-colors: (bl1: #d81212, bl2: #b71dc5, bl3: #38c50d, bl4 :#1dacc5, bl5: #c5ac1d, bl6 :#7cc51d)
+     
+%test-rad 
+    border-radius: $borRad
+@mixin shadowImg($x, $y, $rad)
+    box-shadow: $x $y $rad #1f1e1e
+
+header 
+    background: url(../img/imgM.jpg) no-repeat center top / cover
+    height: 100vh
+.header__text 
+    height: 160px
+    width: 400px
+    text-align: center
+    background: #ffffff80
+    font-family: 'Ubuntu Condensed', sans-serif
+    box-sizing: border-box
+    position: absolute
+    left: 4*10%
+    top: 35%
+    &>p 
+        color: darken(red, 1    )
+    &h1
+        margin: 0 auto
+section 
+    font-family: 'Caveat', cursive
+    .class
+        margin-left: 90px
+        font-size: $wid
+    .class:nth-child(1)
+        font-size: 50px
+        margin-left: 20%
+    .class:nth-child(2)
+        float: right
+    p   
+        font-size: 40px
+.images
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    width: 100%
+    img
+        width: $wid-img
+        min-width: 500px
+        margin-bottom: 50px
+        @extend %test-rad
+        @include shadowImg(3px, 3px, 10px)
+    img:nth-child(3)
+        width: $wid-img*1.75
+        min-width: 700px
+footer
+    height: 40px
+    width: 100%
+    background-color: map-get($map-colors, bl2)
+     
